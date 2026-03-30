@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 灵犀对话助手</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+</head>
+<body class="theme-dark">
+  <div class="app-root">
+    <!-- 顶部标题 -->
+    <header class="app-header">
+      <div class="logo-title">
+        <div class="logo-circle">灵</div>
+        <div class="title-text">
+          <h1 class="gradient-title">AI 灵犀对话助手</h1>
+          <p class="subtitle">一个简洁优雅的原生 Web 对话体验</p>
+        </div>
+      </div>
+      <button id="themeToggleBtn" class="icon-btn" title="切换主题">
+        <span class="icon">🌓</span>
+      </button>
+    </header>
+
+    <!-- 主体区域 -->
+    <main class="app-main">
+      <!-- 左侧欢迎区域 -->
+      <section id="welcomeSection" class="welcome-section">
+        <div class="welcome-content">
+          <h2 class="welcome-title gradient-title">嗨，我是灵犀</h2>
+          <p class="welcome-desc">我能帮你什么吗？</p>
+
+          <div class="suggestions-row">
+            <button class="suggestion-card" data-prompt="我是一个前端开发初学者，如何提升相关技能？">
+              <div class="card-text">
+                <div class="card-title">我是一个前端开发初学者，</div>
+                <div class="card-desc">如何提升相关技能？</div>
+              </div>
+              <span class="card-corner-icon icon-blue" aria-hidden="true"></span>
+            </button>
+
+            <button class="suggestion-card" data-prompt="有哪些适合送朋友新颖的生日礼物或合适的祝福语？">
+              <div class="card-text">
+                <div class="card-title">有哪些适合送朋友新颖的生日礼物</div>
+                <div class="card-desc">或合适的祝福语？</div>
+              </div>
+              <span class="card-corner-icon icon-green" aria-hidden="true"></span>
+            </button>
+
+            <button class="suggestion-card" data-prompt="准备在家里办一个大型家庭聚会，帮我计划…">
+              <div class="card-text">
+                <div class="card-title">准备在家里办一个大型家庭聚会，</div>
+                <div class="card-desc">帮我计划…</div>
+              </div>
+              <span class="card-corner-icon icon-yellow" aria-hidden="true"></span>
+            </button>
+
+            <button class="suggestion-card" data-prompt="带小朋友去野餐，有什么好玩的活动建议吗？">
+              <div class="card-text">
+                <div class="card-title">带小朋友去野餐，</div>
+                <div class="card-desc">有什么好玩的活动建议吗？</div>
+              </div>
+              <span class="card-corner-icon icon-purple" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 右侧聊天区域 -->
+      <section id="chatSection" class="chat-section hidden">
+        <div id="chatList" class="chat-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <!-- 底部输入区域 -->
+    <!-- 底部输入区域 -->
+<footer class="chat-input-bar" aria-label="输入栏">
+  <div id="attachmentPreview" class="attachment-preview hidden" aria-live="polite"></div>
+
+  <div class="chat-input-row">
+    <div class="chat-input-inner">
+      <textarea
+        id="messageInput"
+        class="message-input"
+        rows="1"
+        placeholder="有问题尽管问我"
+      ></textarea>
+
+      <button id="uploadImageBtn" class="icon-btn attach-btn" title="添加附件">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M21.44 11.05 12.25 20.24a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 1 1 5.66 5.66l-9.2 9.2a2 2 0 1 1-2.82-2.83l8.49-8.48"></path>
+          </svg>
+        </span>
+      </button>
+
+      <button id="sendBtn" class="send-icon-btn hidden" title="发送">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 19V5"></path>
+            <path d="M6 11l6-6 6 6"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <button id="themeToggleBtn2" class="icon-btn side-floating-btn" title="切换主题">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="M4.93 4.93l1.41 1.41"></path>
+          <path d="M17.66 17.66l1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="M4.93 19.07l1.41-1.41"></path>
+          <path d="M17.66 6.34l1.41-1.41"></path>
+        </svg>
+      </span>
+    </button>
+
+    <button id="clearChatBtn" class="icon-btn side-floating-btn" title="清除全部对话">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 6h18"></path>
+          <path d="M8 6V4h8v2"></path>
+          <path d="M19 6l-1 14H6L5 6"></path>
+          <path d="M10 11v6"></path>
+          <path d="M14 11v6"></path>
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <input id="imageInput" class="hidden" type="file" accept="image/*" />
+  <div class="input-footnote">内容由 AI 大模型生成，请仔细甄别</div>
+</footer>
+  </div>
+
+  <!-- <script src="./js/ui.js"></script>
+  <script src="./js/chat.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/app.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/atom-one-dark.min.css">
+<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/common.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/common.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github-dark.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="./js/storage.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/chat.js"></script>
+<script src="./js/app.js"></script>
+  
+</body>
+</html>

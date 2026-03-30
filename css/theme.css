@@ -1,0 +1,176 @@
+:root {
+  --app-bg: radial-gradient(1200px 700px at 30% 10%, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0) 55%),
+    radial-gradient(900px 600px at 70% 20%, rgba(167, 139, 250, 0.16), rgba(15, 23, 42, 0) 60%),
+    #0b1020;
+
+  --card-bg: rgba(2, 6, 23, 0.72);
+  --card-soft: rgba(15, 23, 42, 0.9);
+  --card-soft-hover: rgba(15, 23, 42, 1);
+  --card-shadow: 0 16px 40px rgba(15, 23, 42, 0.75);
+  --card-shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.7);
+  --card-shadow-soft-strong: 0 16px 40px rgba(15, 23, 42, 0.85);
+
+  --border-subtle: rgba(148, 163, 184, 0.25);
+  --border-subtle-strong: rgba(148, 163, 184, 0.4);
+
+  --text-primary: #e5e7eb;
+  --text-secondary: rgba(226, 232, 240, 0.72);
+  --text-placeholder: #6b7280;
+
+  --ai-text-color: #eef4ff;
+
+  --badge-bg: rgba(148, 163, 184, 0.16);
+  --accent-soft: rgba(129, 140, 248, 0.6);
+
+  --bubble-ai-bg: rgba(15, 23, 42, 0.9);
+  --bubble-ai-border: rgba(148, 163, 184, 0.35);
+
+  --bubble-user-bg: rgba(15, 23, 42, 0.95);
+  --bubble-user-border: rgba(56, 189, 248, 0.65);
+  --bubble-user-text: #f9fafb;
+
+  --btn-ghost-hover: rgba(148, 163, 184, 0.16);
+
+  --welcome-card-bg: rgba(148, 163, 184, 0.12);
+  --welcome-card-bg-hover: rgba(148, 163, 184, 0.16);
+  --welcome-card-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  --input-bar-bg: rgba(17, 24, 39, 0.72);
+  --input-bar-border: rgba(148, 163, 184, 0.28);
+  --input-bar-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+body.theme-dark {
+  --app-bg: radial-gradient(1200px 700px at 30% 10%, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0) 55%),
+    radial-gradient(900px 600px at 70% 20%, rgba(167, 139, 250, 0.16), rgba(15, 23, 42, 0) 60%),
+    #0b1020;
+
+  --card-bg: rgba(2, 6, 23, 0.72);
+  --card-soft: rgba(15, 23, 42, 0.9);
+  --card-soft-hover: rgba(15, 23, 42, 1);
+  --card-shadow: 0 16px 40px rgba(15, 23, 42, 0.75);
+  --card-shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.7);
+  --card-shadow-soft-strong: 0 16px 40px rgba(15, 23, 42, 0.85);
+
+  --border-subtle: rgba(148, 163, 184, 0.25);
+  --border-subtle-strong: rgba(148, 163, 184, 0.4);
+
+  --text-primary: #e5e7eb;
+  --text-secondary: rgba(226, 232, 240, 0.72);
+  --text-placeholder: #6b7280;
+
+  --ai-text-color: #eef4ff;
+
+  --badge-bg: rgba(148, 163, 184, 0.16);
+  --accent-soft: rgba(129, 140, 248, 0.6);
+
+  --bubble-ai-bg: rgba(15, 23, 42, 0.9);
+  --bubble-ai-border: rgba(148, 163, 184, 0.35);
+
+  --bubble-user-bg: rgba(15, 23, 42, 0.95);
+  --bubble-user-border: rgba(56, 189, 248, 0.65);
+  --bubble-user-text: #f9fafb;
+
+  --btn-ghost-hover: rgba(148, 163, 184, 0.16);
+
+  --welcome-card-bg: rgba(148, 163, 184, 0.12);
+  --welcome-card-bg-hover: rgba(148, 163, 184, 0.16);
+  --welcome-card-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+  --input-bar-bg: rgba(17, 24, 39, 0.72);
+  --input-bar-border: rgba(148, 163, 184, 0.28);
+  --input-bar-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+
+  --composer-bg: rgba(39, 49, 82, 0.92);
+  --composer-border: rgba(126, 143, 188, 0.2);
+  --composer-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+
+  --composer-text: #dfe9ff;
+  --composer-placeholder: rgba(214, 223, 245, 0.56);
+
+  --composer-icon: rgba(222, 231, 247, 0.72);
+  --composer-icon-hover: #ffffff;
+  --composer-icon-hover-bg: rgba(255, 255, 255, 0.08);
+
+  --composer-send-icon: #ffffff;
+  --composer-send-bg: rgba(255, 255, 255, 0.1);
+  --composer-send-bg-hover: rgba(255, 255, 255, 0.18);
+
+  --composer-footnote: rgba(214, 223, 245, 0.62);
+  --composer-side-btn-bg: rgba(58, 72, 111, 0.72);
+  --composer-side-btn-bg-hover: rgba(72, 88, 132, 0.9);
+  --composer-side-btn-shadow: none;
+
+  --composer-send-bg: linear-gradient(135deg, #2f7df6, #3b82f6);
+  --composer-send-bg-hover: linear-gradient(135deg, #256fe0, #2f7df6);
+  --composer-send-shadow: 0 8px 18px rgba(47, 125, 246, 0.28);
+  --composer-send-shadow-hover: 0 10px 22px rgba(47, 125, 246, 0.34);
+}
+
+body.theme-light {
+  --app-bg: radial-gradient(1100px 700px at 30% 10%, rgba(96, 165, 250, 0.14), rgba(255, 255, 255, 0) 55%),
+    radial-gradient(900px 650px at 70% 18%, rgba(167, 139, 250, 0.12), rgba(255, 255, 255, 0) 60%),
+    #f5f7fc;
+
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --card-soft: rgba(255, 255, 255, 0.88);
+  --card-soft-hover: rgba(255, 255, 255, 0.98);
+  --card-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+  --card-shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --card-shadow-soft-strong: 0 14px 30px rgba(15, 23, 42, 0.12);
+
+  --border-subtle: rgba(148, 163, 184, 0.22);
+  --border-subtle-strong: rgba(148, 163, 184, 0.34);
+
+  --text-primary: #101828;
+  --text-secondary: rgba(15, 23, 42, 0.56);
+  --text-placeholder: rgba(15, 23, 42, 0.34);
+
+  --ai-text-color: rgba(15, 23, 42, 0.92);
+
+  --badge-bg: rgba(99, 102, 241, 0.10);
+  --accent-soft: rgba(99, 102, 241, 0.55);
+
+  --bubble-ai-bg: transparent;
+  --bubble-ai-border: transparent;
+
+  --bubble-user-bg: #243b69;
+  --bubble-user-border: rgba(36, 59, 105, 0.16);
+  --bubble-user-text: #f9fafb;
+
+  --btn-ghost-hover: rgba(148, 163, 184, 0.10);
+
+  --welcome-card-bg: rgba(255, 255, 255, 0.70);
+  --welcome-card-bg-hover: rgba(255, 255, 255, 0.88);
+  --welcome-card-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+
+  --input-bar-bg: rgba(255, 255, 255, 0.92);
+  --input-bar-border: rgba(148, 163, 184, 0.26);
+  --input-bar-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+
+  --composer-bg: rgba(255, 255, 255, 0.9);
+  --composer-border: rgba(148, 163, 184, 0.35);
+  --composer-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+
+  --composer-text: #1e293b;
+  --composer-placeholder: rgba(71, 85, 105, 0.48);
+
+  --composer-icon: rgba(71, 85, 105, 0.72);
+  --composer-icon-hover: #0f172a;
+  --composer-icon-hover-bg: rgba(15, 23, 42, 0.06);
+
+  --composer-send-icon: #1e293b;
+  --composer-send-bg: rgba(15, 23, 42, 0.06);
+  --composer-send-bg-hover: rgba(15, 23, 42, 0.12);
+
+  --composer-footnote: rgba(71, 85, 105, 0.62);
+
+  --composer-side-btn-bg: rgba(255, 255, 255, 0.96);
+  --composer-side-btn-bg-hover: rgba(241, 245, 249, 1);
+  --composer-side-btn-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  --composer-send-bg: linear-gradient(135deg, #2f7df6, #3b82f6);
+  --composer-send-bg-hover: linear-gradient(135deg, #256fe0, #2f7df6);
+  --composer-send-shadow: 0 8px 18px rgba(47, 125, 246, 0.18);
+  --composer-send-shadow-hover: 0 10px 22px rgba(47, 125, 246, 0.24);
+}
